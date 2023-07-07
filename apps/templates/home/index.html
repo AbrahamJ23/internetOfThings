@@ -451,11 +451,11 @@
     let verbruik = JSON.parse({{data | tojson }})
     let dagen = JSON.parse({{days | tojson}})
     let info = verbruik[verbruik.length - 1]; 
-    var sum = verbruik.reduce(function(a, b){
-      return a + b;
-    }, 0);
-    var opsomming = sum / verbruik.length;
-    let average = opsomming.toFixed(1);
+    // var sum = verbruik.reduce(function(a, b){
+    //   return a + b;
+    // }, 0);
+    // var opsomming = sum / verbruik.length;
+    // let average = opsomming.toFixed(1);
 
     document.getElementById("avg").innerHTML = average;
     document.getElementById("info").innerHTML = verbruik;

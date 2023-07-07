@@ -21,15 +21,22 @@ def index():
     data = []
     days = []
     hourly_averages = {}
+    daily_averages = {}
     dates = db.session.query(Verbruik.date).all()
     dates = [date.strftime('%A') for (date,) in dates] 
     for i in info:
         verbruik = i.verbruik
         date = i.date.strftime('%d/%m/%y')
         dagen = i.date.strftime('%A')
-        data.append(verbruik)
-        days.append(date)
-        dates.append(dagen)
+
+        if dagen in daily_averages:
+            daily_averages[dagen].append(verbruik)
+        else:
+            daily_averages[dagen] = [verbruik]
+
+        # data.append(verbruik)
+        # days.append(date)
+        # dates.append(dagen)
 
         hour = i.date.strftime('%H')
         hours = hour + ":00"
@@ -53,8 +60,16 @@ def index():
             hourly_labels.append(hours)
             hourly_data.append(average_verbruik)
 
-    data = json.dumps(data)
-    days = json.dumps(days)
+    dailey_labels = []
+    dailey_data = []
+    for dagen, v_list in daily_averages.items():
+        a_verbruik = sum(v_list) / len(v_list)
+
+        dailey_labels.append(dagen)
+        dailey_data.append(a_verbruik)
+
+    data = json.dumps(dailey_data)
+    days = json.dumps(dailey_labels)
     dates = json.dumps(dates)
     hourly_data = json.dumps(hourly_data)
     hourly_labels = json.dumps(hourly_labels)
