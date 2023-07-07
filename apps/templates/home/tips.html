@@ -1,0 +1,176 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Tips {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="min-height-300 bg-primary position-absolute w-100"></div>
+
+{% include "includes/sidenav.html" %}
+
+<main class="main-content position-relative border-radius-lg ">
+
+  {% include "includes/navigation.html" %}
+
+  <div class="container-fluid py-4">
+
+      <div class="card">
+        <div class="card-header pb-0 p-3">
+          <h5 class="mb-0">Bespaar tips</h5>
+        </div>
+        <div class="card-body p-3">
+          <ul class="list-group">
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-pin-3 text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Weg Van Huis?</h6>
+                  <span class="text-xs">Als u langere tijd van huis bent zijn er verschillende dingen die u kunt doen om energie te besparen:</span>
+                  <span class="text-xs"> - Trek stekkers van apparaten uit het stopcontact</span>
+                  <span class="text-xs"> - Doe de gordijnen dicht om warmte binnen te houden in de winter en warmte buiten te houden in de zomer</span>
+                  <span class="text-xs"> - Verlaag de thermostaat naar een lagere temperatuur, bijvoorbeeld 15 graden</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-check-bold text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Zonnepanelen</h6>
+                  <span class="text-xs">Informeer of zonnepanelen geschikt zijn voor uw woning. Zonnepanelen kunnen vooral in de zomermaanden zorgen voor veel besparing op uw energie rekening.</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-controller text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Apparaten</h6>
+                  <span class="text-xs">Schakel elektronische apparaten volledig uit in plaats van ze in stand-by modus te laten staan.</span>
+                  <span class="text-xs">Trek de stekker uit het stopcontact als apparaten niet gebruikt worden.</span>
+                  <span class="text-xs">Laad apparaten niet langer op dan nodig. En haal de lader uit het stopcontact als het laden klaar is.</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-bulb-61 text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Lampen</h6>
+                  <span class="text-xs">Gebruik energiezuinige verlichting, zoals LED-lampen, en schakel lampen uit wanneer ze niet nodig zijn.</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-sound-wave text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Temperatuur</h6>
+                  <span class="text-xs">Zet de verwarming een paar graden kouder. Vooral in de winter kan hier veel op bespaard worden door warmere kleren te dragen.</span>
+                  <span class="text-xs">Informeer of een warmtepomp geschikt is voor uw huis. Door over te stappen van gas op groene energie bronnen kunt u veel geld besparen op de energie rekening</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-settings-gear-65 text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Slimme Thermostaat</h6>
+                  <span class="text-xs">Installeer een programmeerbare thermostaat om de verwarming en koeling efficiënt te regelen. Ook als u niet thuis bent.</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-box-2 text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Vaatwas</h6>
+                  <span class="text-xs">Gebruik vaatwasser alleen wanneer deze vol is en kies voor energiezuinige programma's.</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-tie-bow text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Kleding</h6>
+                  <span class="text-xs">Hang kleding te drogen in plaats van een droger te gebruiken. Gebruik de wasmachine en wasdroger alleen wanneer ze vol zijn en kies voor energiezuinige programma's. </span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-settings text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Vriezer & Koelkast</h6>
+                  <span class="text-xs">Maak regelmatig de condensatorspoelen van de koelkast en vriezer schoon voor een efficiëntere werking.</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-cart text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Vervang Oude Apparaten</h6>
+                  <span class="text-xs">Vervang oude apparaten voor energiezuinige apparaten met een hoge energie-efficiëntieklasse.</span>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                  <i class="ni ni-umbrella-13 text-white opacity-10"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark text-sm">Water</h6>
+                  <span class="text-xs">Gebruik een waterbesparende douchekop en verminder de tijd onder de douche. Er wordt veel energie gebruikt voor het verwarmen van water.</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      
+
+  {% include "includes/footer.html" %}
+
+  </div>
+
+</main> 
+
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
